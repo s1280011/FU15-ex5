@@ -18,13 +18,6 @@ int main(){
   printf("Die 1: %d\n", a);
   printf("Die 2: %d\n", b);
   printf("Total value: %d\n", a + b);
-<<<<<<< HEAD
-  if(a + b >= 7) printf("you won!");
-  else printf("You lost.");
-=======
-  if(a + b >= 7) printf("%s won!\n", name);
-  else printf("%s lost.\n", name);
->>>>>>> experimental
   return 0;
 
 }
