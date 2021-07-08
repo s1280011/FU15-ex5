@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -19,6 +18,8 @@ int main(){
   printf("Die 1: %d\n", a);
   printf("Die 2: %d\n", b);
   printf("Total value: %d\n", a + b);
+  if(a + b >= 7) printf("%s won!\n", name);
+  else printf("%s lost.\n", name);
   return 0;
 
 }
