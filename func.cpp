@@ -3,7 +3,7 @@
 #include <stdexcept>
 
 //time complexity
- N = oddnumber: O(N)
+ N = odd number: O(N)
  N = even number:
 If there are even numbers, nth_element is called twice, so average is O(2N) ≒ O(N)
 //
@@ -21,12 +21,11 @@ float compute_median(std::vector<float> v)
     std::nth_element(v.begin(), v.begin() + mid1, v.end());
     float a = v[mid1];
 
-    if (mid1 == mid2) {
+    if (mid1 == mid2) { // N = odd number
         return a;
     }
 
-    std::nth_element(v.begin(), v.begin() + mid2, v.end());
+    std::nth_element(v.begin(), v.begin() + mid2, v.end()); // N = even number
     float b = v[mid2];
-
     return (a + b) * 0.5f;
 }
